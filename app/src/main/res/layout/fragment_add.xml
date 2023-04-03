@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.add.AddFragment">
+
+    <EditText
+        android:id="@+id/addFirstName_ed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="Имя"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addLastName_ed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Фамилия"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/addFirstName_ed"
+        app:layout_constraintStart_toStartOf="@+id/addFirstName_ed"
+        app:layout_constraintTop_toBottomOf="@+id/addFirstName_ed" />
+
+    <EditText
+        android:id="@+id/addAge_ed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Возраст"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/addLastName_ed"
+        app:layout_constraintStart_toStartOf="@+id/addLastName_ed"
+        app:layout_constraintTop_toBottomOf="@+id/addLastName_ed" />
+
+    <Button
+        android:id="@+id/buttonSaveDB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Сохранить в базе"
+        app:layout_constraintEnd_toEndOf="@+id/addAge_ed"
+        app:layout_constraintStart_toStartOf="@+id/addAge_ed"
+        app:layout_constraintTop_toBottomOf="@+id/addAge_ed" />
+</androidx.constraintlayout.widget.ConstraintLayout>
